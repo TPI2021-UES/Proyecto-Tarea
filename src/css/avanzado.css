@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: #fafafa;
+  font-family: "Times New Roman";
+  height: 100%;
+  width: 100%; }
+  body header {
+    background: #0c0f18;
+    width: 100%;
+    clear: both;
+    content: "";
+    display: table; }
+    body header .navbar {
+      background: #0c0f18; }
+    body header .collapse .items {
+      background-color: #0c0f18;
+      color: #f0f0f0; }
+      body header .collapse .items li:hover {
+        background-color: #485780; }
+    body header .menu-inicial {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: space-between; }
+      body header .menu-inicial a {
+        margin-left: 30px; }
+  body footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    background: #0c0f18;
+    max-width: 10000px;
+    min-height: 50px;
+    color: blanchedalmond;
+    text-align: center;
+    font-size: 100%;
+    font: italic;
+    font-weight: bolder;
+    text-decoration: darkslategray;
+    padding: auto;
+    box-sizing: border-box;
+    margin-top: 25px; }
+    body footer .icon {
+      width: 80px;
+      height: 80px;
+      margin: 20px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: all 0.4s; }
+    body footer .icon:nth-child(1):hover {
+      box-shadow: 0px 0px 10px #0e34a0; }
+    body footer .icon:nth-child(2):hover {
+      box-shadow: 0px 0px 10px #750d37; }
+    body footer .icon:nth-child(3):hover {
+      box-shadow: 0px 0px 10px #9ac4f8; }
+    body footer .fa-facebook-f {
+      filter: drop-shadow(0px 0px 10px #0e34a0); }
+    body footer .fa-instagram-square {
+      filter: drop-shadow(0px 0px 10px #750d37); }
+    body footer .fa-twitter-square {
+      filter: drop-shadow(0px 0px 10px #9ac4f8); }
+    body footer .center {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    body footer .main {
+      width: 100%;
+      height: 100%; }
+
+/*# sourceMappingURL=avanzado.css.map */

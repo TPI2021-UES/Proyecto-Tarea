@@ -1,0 +1,47 @@
+@import "mixins.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(250, 250, 250);
+    font-family: "Times New Roman";
+    height: 100%;
+    width: 100%;
+    
+    header {
+        background: rgb(12, 15, 24);
+        width: 100%;
+        clear: both;
+        content: "";
+        display: table;
+
+        .navbar{
+            background: rgb(12, 15, 24);
+        }
+
+        .collapse .items{
+            background-color: rgb(12, 15, 24);
+            color: rgb(240, 240, 240);
+
+            li:hover{
+                background-color: rgb(72, 87, 128);
+            }
+        }
+
+        .menu-inicial{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: space-between;
+        
+            a{
+                margin-left: 30px;
+            }
+        }
+    }
+    @include footer;
+}
