@@ -8,12 +8,14 @@ body {
   font-family: "Times New Roman";
   height: 100vh;
   width: 100%; }
+
   body header {
     background: #0c0f18;
     width: 100%;
     clear: both;
     content: "";
     display: table; }
+
   @media screen and (max-width: 450px) {
     body header {
       background-color: white; }
@@ -29,11 +31,13 @@ body {
       align-items: center;
       cursor: pointer;
       z-index: 200; }
+
     body .menu__element {
       width: 30px;
       border-radius: 5px;
       height: 5px;
       background-color: white; }
+
     body .menu__element::after {
       position: relative;
       top: 5px;
@@ -43,6 +47,7 @@ body {
       height: inherit;
       background-color: inherit;
       border-radius: inherit; }
+      
     body .menu__element::before {
       position: relative;
       bottom: 10px;
