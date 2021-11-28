@@ -7,7 +7,8 @@ body {
   background: #fafafa;
   font-family: "Times New Roman";
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  text-align: justify; }
   body header {
     background: #0c0f18;
     width: 100%;
@@ -27,6 +28,42 @@ body {
       align-content: space-between; }
       body header .menu-inicial a {
         margin-left: 30px; }
+  body .mainContent {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    text-align: justify; }
+  body .content {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-around; }
+    body .content p {
+      max-width: 900px; }
+    body .content .subTeme {
+      margin: 40px 15px 15px 40px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: space-around;
+      /*background-color: rgb(250, 250, 250);*/
+      width: auto;
+      height: auto;
+      border-radius: 0px 0px 30px 30px;
+      box-shadow: #888888 5px 5px 5px; }
+      body .content .subTeme img {
+        margin: 10px;
+        max-width: 800px;
+        max-height: 800px; 
+        border-radius: 20px;
+      }
   body footer {
     width: 100%;
     position: relative;
