@@ -1,0 +1,37 @@
+.main {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.main__container {
+    margin-top: 40px;
+}
+
+.content__first {
+    border: 1px solid black;
+    border-bottom: none;
+    height: 50px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.content__second {
+    border: 1px solid black;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content {
+    width: 500px;
+}
+
+.content__button {
+    background-color: transparent;
+    border: none;
+    width: 60px;
+    height: inherit;
+}
+
+.code__img {
+    width: 500px;
+}
