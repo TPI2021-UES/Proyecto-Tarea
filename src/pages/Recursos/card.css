@@ -1,0 +1,102 @@
+.img{
+    float: right;
+    
+}
+
+.hero{
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    background-position: right;
+    background-image: url(https://i.pinimg.com/originals/e1/9b/43/e19b43ef524e01231d48eddca70a8708.gif);
+    background-repeat:repeat-y;
+    background-size: 55%;
+    
+    color: #fff;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    background:transparent;
+    font-family:'Times New Roman', Times, serif;
+    padding: 0 20px;
+}
+
+.card-container{
+    display: flex;
+    width: 600px;
+    height: auto;
+    background:rgb(7, 7, 7);
+    border-radius: 2px;
+    box-shadow: 1px 1px 4px 2px rgba(0,0,0, .2);
+}
+
+.header{
+    border-right: 1px solid #ddd;
+}
+
+.descripcion{
+    background: #fbfbfb;
+}
+
+.header,.descripcion{
+    padding: 20px;
+    text-align: center;
+}
+
+.header a{
+    position: relative;
+    display: block;
+}
+
+.header img{
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px rgba(0,0,0, .06);
+    margin: 20px 30px;
+    transition: .25;
+}
+
+.header a:hover img{
+    box-shadow: 0 0 0 12px  rgba(0,0,0, .1);
+}
+
+.header h2{
+    color: #f5f1f0;
+}
+
+.descripcion{
+    position: relative; 
+}
+
+.descripcion p{
+    margin: 20px 30px;
+    color:#fff;
+}
+
+
+@media (max-width:640px){
+    .card-container{
+        display: block;
+        width: 450px;
+    }
+}
+
+header{
+    padding: 20px 20px 5px 20px;
+    border: none;
+}
+
+.descripcion{
+    padding: 5px 20px 20px 20px;
+    background: transparent;
+}
+
+.descripcion a{
+    color:rgb(236, 167, 181);
+    font-weight: bolder;
+}
+.p{
+    font-family:'Times New Roman', Times, serif;
+}

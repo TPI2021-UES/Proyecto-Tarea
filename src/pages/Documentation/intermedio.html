@@ -40,6 +40,151 @@
             </div>
           </div>
     </header>
+
+    <!--contenido principal derecibimiento a la seccion-->
+    <main class="mainContent">
+      <h1>Nivel Intermedio.</h1>
+      <!--una descripcion-->
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum voluptas tempore beatae unde non consequatur blanditiis deleniti, quas cupiditate delectus, illum omnis accusantium fugit labore consequuntur quos voluptate sapiente! Doloribus.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque debitis minima officia voluptas. Dolore recusandae, velit quae dolorum perspiciatis, ab sapiente, quos voluptate ducimus earum officiis doloribus aspernatur reprehenderit id.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum doloremque, nam deleniti neque, blanditiis nulla provident sed exercitationem molestiae maiores ea, voluptatem rerum aliquid quibusdam aperiam similique quae voluptatum molestias.</p>
+      <ul class="nav nav-tabs">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#selectivas" role="button" aria-expanded="false">
+            Estructuras Selectivas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#if-simple">if</a></li>
+            <li><a class="dropdown-item" href="#if-else">if-else</a></li>
+            <li><a class="dropdown-item" href="#if-anidada">else-if</a></li>
+            <li><a class="dropdown-item" href="#switchMultiple">switch</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#repetitivas" role="button" aria-expanded="false">
+            Estructuras Repetitivas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#for">for</a></li>
+            <li><a class="dropdown-item" href="#while">for condicionado (for-while)</a></li>
+            <li><a class="dropdown-item" href="#range">for-range</a></li>
+            <li><a class="dropdown-item" href="#infinity">for "infinito"</a></li>
+            <li><a class="dropdown-item" href="#defer">defer</a></li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+
+    <!--contenido de las estructuras del lenguaje, contenido especifico-->
+    <!--en este caso es el de las selectivas-->
+    <a name="selectivas" id="selectivas"></a>
+    <div class="content">
+      <h2>Estructuras Selectivas</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+       Quaerat illum dolores, dignissimos qui quia at totam saepe temporibus laborum consectetur,
+        recusandae praesentium a eius laudantium magni perspiciatis.
+        Itaque, mollitia accusantium!</p>
+      <div class="subTeme">
+        <a name="if-simple" id="if-simple"></a>
+        <h3>Selectiva simple <b>if</b></h3>
+        <p>
+          Esta es la sentencia mas sencilla de utilizar y se encuentra en casi todos los lenguajes de programación.
+          Representa el paradigma de lo que sucede si una condición se cumple.
+        </p>
+        <img src="../../multimedia/intermedio/if_basico.png" alt="estructura del if">
+      </div>
+      <a name="if-else" id="if-else"></a>
+      <div class="subTeme">
+          <h3>Selectiva doble <b>if-else</b></h3>
+          <p>
+            Es la misma instruccion que la anterior a diferencia que en esta se especifica con la palabra clave <i>else</i> en caso de que no se cumpla la condición que es lo que realizara.
+          </p>
+          <img src="../../multimedia/intermedio/if-else.png" alt="estructura if-else">
+      </div>
+      <a name="if-anidada" id="if-anidada"></a>
+      <div class="subTeme">
+        <h3>Selectiva anidada <b>else-if</b></h3>
+        <p>
+          La sentencia anidada consiste en evaluar multiples condiciones sin necesidad de hacer de nuevo un bloque if en en el bloque else respectivo, nos permite anidar las instrucciones de una maera mas dinamica y poder evaluar las condiciones de una mejor manera.
+          Se pone las palabras claves <i>else</i> y <i>if</i> precedidos de un especio.Para proximamente evaluar la condicion y realizar ciertas acciones.
+        </p>
+        <img src="../../multimedia/intermedio/else-if.png" alt="estructura else-if">
+        <p>NOTA: Solo se pude hacer uso de dicha instruccion si ya se ha especificado antes un bloque <i>if</i></p>
+      </div>
+      <div class="subTeme">
+        <h3>Selectiva con declaración y condición en la misma instrucción</h3>
+        <P>GO es un lenguaje muy comodo, en esta ocacion nos podemos dar cuenta que podemos declarar, inicializar y evaluar la condicion en la misma declaracion de la instruccion <i>if.</i></P>
+        <img src="../../multimedia/intermedio/if_sin_previa_declaracion.png" alt="estructuras selectivas todo en uno">
+      </div>
+      <a name="switchMultiple" id="switchMultiple"></a>
+      <div class="subTeme">
+        <h3>Selectiva multiple <b>switch</b></h3>
+        <p>
+          Este tipo de estructura nos permite evaluar mutiples condiciones al mismo tiempo ocupando la palabra clave <i>case</i>, y si por algun motivo ninguno de los valores que se solicitan son dados, entonces se ejecuta la condición por defecto especificada en este caso con la palabra clave <i>default</i>.
+        </p>
+        <img src="../../multimedia/intermedio/switch.png" alt="estructura switch">
+        <p>NOTA: no se pude hacer uso de <i>default</i> a menos que ya haya un <i>case</i> antes, y solo se puede hacer uso de valores, numericos enteros, y texto</p>
+      </div>
+      <div class="subTeme">
+        <h3>Selectiva multiple <b>switch (sin condición)</b></h3>
+        <p>Gracias a la versatilidad del lenguaje GO ahora podemos ver otra nueva funcionalidad diferente a la mayoria de lenguajes, GO nos permite no especificar la variable de condición que se evaluara, siempre y cuando exista  </p>
+       <img src="../../multimedia/intermedio/switch_sin_variable.png" alt="estructura switch sin condicion">
+      </div>
+    </div>
+    
+    <a name="repetitivas" id="repetitivas"></a>
+    <div class="content">
+      <h2>Estructuras Repettivas o Bucles</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        Quaerat illum dolores, dignissimos qui quia at totam saepe temporibus laborum consectetur,
+         recusandae praesentium a eius laudantium magni perspiciatis.
+         Itaque, mollitia accusantium!</p>
+       <div class="subTeme">
+         <a name="for" id="for"></a>
+         <h3>Bucle <b>for</b></h3>
+         <p>
+           Esta estructura es el <i>for</i> "tradicional" que se ocupa en la mayoria de lenguajes de programación, especificamente los derivados del lenguaje C,
+           primero se limita el bloque de codigo con la palabra clave <i>for</i>, precedida de la declaración de la variable de control, inicialización, condición y su acción ya sea de incremento o decremento.
+           Estos bucles son muy utiles para situaciones en las que ya se sabe cuantas veces necesitamos repetir cierta acción.
+         </p>
+         <img src="../../multimedia/intermedio/for_comun.png" alt="estructura del if">
+       </div>
+       <a name="while" id="while"></a>
+       <div class="subTeme">
+           <h3>Bucle <b>for-while</b> o for condicionado</h3>
+           <p>
+             Este es un blucle en el cual se especifica la condición que se debe de cumplir para que se deje de ejecutar, en la mayoria de lenguajes se le denomino bucle <i>while</i>, pero en GO lo ponen como <i>for</i> para facilitar al estudiante a que deje de memorizar tantas palabras clave y se centre en la funcionalidad de lo que esta haciendo aprendiendo diferentes formas de programar una estructura.
+           </p>
+           <img src="../../multimedia/intermedio/while.png" alt="estructura if-else">
+       </div>
+       <a name="range" id="range"></a>
+       <div class="subTeme">
+         <h3>Bucle <b>for-range</b></h3>
+         <p>
+           En este tipo de instrucción <i>for</i> se declara un indice el cual biene dado por la longitud del objeto en cuestion que se esta evaluando, por ejemplo: puede ser una cada de caracteres y de ella se toma la lomgitud  la cuel ese valor de longitud sera las veces que se repetiran ciertas acciones dentro de este bucle <i>for</i>
+         </p>
+         <img src="../../multimedia/intermedio/for_range.png" alt="estructura else-if">
+        </div>
+       <a name="infinity" id="infinity"></a>
+       <div class="subTeme">
+         <h3>Bucle <b>for "infinito"</b></h3>
+         <p>
+          Es un bucle relativamente infinito. porque en cierto punto el bucle se evaluara sin condición alguna que lo pueda controlar, pero este depende del entorno en el que se encuentra.
+          Si por ejemplo lo ocupas en tu computadora personal, este se ejecutara hasta acabar el almcenamiento en el que el programa de este se este ejecutando.   
+        </p>
+         <img src="../../multimedia/intermedio/for_infinity.png" alt="estructura switch">
+          <p>NOTA: no es recomendable utilizar esta instrucción debido a problemas que pueda causar en tu equipo, solo es meramente informativo</p>
+        </div>
+       <a name="defer" id="defer"></a>
+       <div class="subTeme">
+         <h3>Instrucción <b>defer</b></h3>
+         <p>
+           Ahora uno no tan común. Defer permite realizar una declaración que se ejecutará al final de la función, antes del retorno, sin importar en que nivel de la misma fue declarada.
+         </p>
+        <img src="../../multimedia/intermedio/defer.png" alt="estructura switch sin condicion">
+       </div>
+    </div>
+    
     <!--Definicion del Footer-->
    <footer>
         <div class="main center">
