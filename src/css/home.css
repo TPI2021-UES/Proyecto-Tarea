@@ -3,27 +3,45 @@
   margin: 0;
   box-sizing: border-box; }
 
+
 body {
-  background: #fafafa;
-  font-family: "Times New Roman";
-  height: 100vh;
-  width: 100%; }
+  
+    width: 100%;
+    height: 100vh;
+    color:#fff;
+    background: linear-gradient(45deg,rgb(110, 25, 51),rgba(5,72,82,1),rgb(52, 43, 66),black);
+    background-size: 650% 650%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+    font-family: "Times New Roman";
+  
+    }
+
+  @keyframes cambiar{
+    0%{background-position:0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+  }
+  
+  
+
+
   body header {
-    background: #0c0f18;
+    background: #07080e;
     width: 100%;
     clear: both;
     content: "";
     display: table; }
   @media screen and (max-width: 450px) {
     body header {
-      background-color: white; }
+      background-color: rgb(255, 250, 250); }
     body .menu__expand {
       width: 40px;
       height: 40px;
       position: absolute;
       top: 10px;
       left: 10px;
-      background-color: black;
+      background-color: rgb(250, 246, 246);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -33,7 +51,7 @@ body {
       width: 30px;
       border-radius: 5px;
       height: 5px;
-      background-color: white; }
+      background-color: rgb(252, 246, 246); }
     body .menu__element::after {
       position: relative;
       top: 5px;
@@ -64,7 +82,7 @@ body {
     float: left; }
   body nav ul li a {
     text-decoration: none;
-    color: honeydew;
+    color: rgb(231, 236, 231);
     font-weight: bold; }
   body nav ul li a ::before {
     display: block;
@@ -84,27 +102,7 @@ img {
   margin-right: auto;
   width: 20%; }
 
-table {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  border-collapse: separate;
-  border-spacing: 10px 5px;
-  width: 60%; }
 
-th {
-  background: #0e0e1f;
-  color: white; }
-
-td,
-th {
-  border: 2px solid black;
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-style: italic;
-  text-justify: auto; }
 
 footer {
   width: 100%;
@@ -113,7 +111,7 @@ footer {
   margin: auto;
   width: 100%;
   border-radius: 0 0 20px 20px;
-  background: #0c0f18;
+  background: #07080e;
   max-width: 10000px;
   min-height: 50px;
   color: blanchedalmond;
@@ -156,6 +154,7 @@ footer {
   margin-top: 10px;
   margin-bottom: 20px;
   width: 100%;
+  background: transparent;
   height: 300px;
   overflow: hidden; }
 
@@ -177,7 +176,9 @@ footer {
 
 .slider img {
   width: 30%;
-  height: 80%; }
+  height: 80%;
+  border-radius: 50%;
+}
 
 @keyframes cambio {
   0% {
