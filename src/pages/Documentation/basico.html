@@ -89,7 +89,7 @@
 
     <div class = "content">
         <div class = "subTeme" id = "install">
-            <h2 class = "main__tittle">Instalacion</h2>
+            <h2 class = "main__title">Instalacion</h2>
             <div class =  "content">
                 <div class = "content__first">
                     <button 
@@ -103,12 +103,12 @@
                     >Windows</button>
                 </div>
                 <div class = "content__second" id = "idContentSecond" content-active = "linux">
-                    <ol>
+                    <ol class = "res__ol">
                         <li>
                             Haga click en <a href = "#">Download</a> para descargar la ultima version de Go
                         </li>
                         <li>
-                            <video controls width="400">
+                            <video controls width="300">
                                 <source type = "video/mp4" src = "../../multimedia/basico/install.mp4">
                             </video>
                         </li>
@@ -120,7 +120,7 @@
         <div class = "subTeme" id = "hello-world">
             <h2 class = "main__title">Primer Programa(Hola mundo)</h2>
             <div class = "">
-                <ol>
+                <ol class = "res__ol">
                     <li>
                         <code>go init example/go</code>
                         Se creara un archivo go.mod el cual genera un modulo
@@ -130,7 +130,13 @@
                     </li>
                     <li>
                         Escriba el siguiente codigo en su editor <br>
-                        <img src = "../../multimedia/basico/hello-word.png" alt = 'code-hello-word' class = "code__img">
+                        <a href = "../../multimedia/basico/hello-word.png" target = "blank">
+                            <img 
+                                src = "../../multimedia/basico/hello-word.png" 
+                                alt = 'code-hello-word' 
+                                class = "code__img res__imgol"
+                            >
+                        </a>
                     </li>
                     <li>
                         <code>go run hello.go </code>
@@ -140,43 +146,84 @@
             </div>
         </div>
         <div class = "subTeme" id = "tipos-datos">
-            <h2>Tipos de Datos Variables</h2>
-            <p>Se muestran a continuacion como se declara y asignan los varoles a las variables y algunos de sus tipos basicos</p>
-            <img src = "../../multimedia/basico/tipos.png" alt = "code tipos" style = "width: 1200px" >
+            <h2 class = "main__title">Tipos de Datos Variables</h2>
+            <p class = "res__paddingP">Se muestran a continuacion como se declara y asignan los varoles a las variables y algunos de sus tipos basicos</p>
+            <a href="../../multimedia/basico/tipos.png" target = "blank">
+                <img 
+                    src = "../../multimedia/basico/tipos.png" 
+                    alt = "code tipos" 
+                    class = "res__imgcode imgcode"
+                    >
+            </a>
         </div>
         <div class = "subTeme" id = "constantes">
-            <h2>Constantes</h2>
-            <p>Las constantes son variables de datos que no se pueden reasignar su valor</p>
-            <img src = "../../multimedia/basico/constant.png" alt = "code for constant">
+            <h2 class = "main__title">Constantes</h2>
+            <p class = "res__paddingP">Las constantes son variables de datos que no se pueden reasignar su valor</p>
+            <a href="../../multimedia/basico/constant.png" target = "blank">
+                <img 
+                    src = "../../multimedia/basico/constant.png" 
+                    alt = "code for constant"
+                   class = "res__imgcode"
+                >
+            </a>
         </div>
         <div class = "subTeme" id = "array">
-            <h2>Arrays</h2>
-            <p>Los Arrays son un tipo de estructura unidimensional y de un solo tipo de datos el cual se le debe de asignar una longitud y tipo de datos inicial. Pero Golang nos permite definir arrays con un limite infinito por decirlo asi.</p>
-            <img src = "../../multimedia/basico/array.png" alt = "code for arrays">
+            <h2 class = "main__title">Arrays</h2>
+            <p class = "res__paddingP">Los Arrays son un tipo de estructura unidimensional y de un solo tipo de datos el cual se le debe de asignar una longitud y tipo de datos inicial. Pero Golang nos permite definir arrays con un limite infinito por decirlo asi.</p>
+            <a href = "../../multimedia/basico/array.png" target = "blank">
+                <img
+                    src = "../../multimedia/basico/array.png" 
+                    alt = "code for arrays"
+                    class = "res__imgcode"
+                >
+            </a>
         </div>
 
         <div class = "subTeme" id = "matris">
-            <h2>Matrices</h2>
-            <p>Las matrices son muy parecidos a los Array la unica diferencia es que estas pueden ser de 2 o mas dimensiones en este caso llegaremos hasta 3 dimensiones por su grado de complejidad que se genera despues de las 3 dimensiones</p>
-            <img src = "../../multimedia/basico/matris.png" alt = "code for matrices">
+            <h2 class = "main__title">Matrices</h2>
+            <p class = "res__paddingP">Las matrices son muy parecidos a los Array la unica diferencia es que estas pueden ser de 2 o mas dimensiones en este caso llegaremos hasta 3 dimensiones por su grado de complejidad que se genera despues de las 3 dimensiones</p>
+            <a href = "../../multimedia/basico/matris.png" target = "blank">
+                <img 
+                    src = "../../multimedia/basico/matris.png"
+                    alt = "code for matrices"
+                    class = "res__imgcode"
+                >
+            </a>
         </div>
 
         <div class = "subTeme" id = "slice">
-            <h2>Slices</h2>
-            <p>Los slices son una forma sencilla de hacer un recorte en el array</p>
-            <img src = "../../multimedia/basico/slice.png" alt = "code for slices">
+            <h2 class = "main__title">Slices</h2>
+            <p class = "res__paddingP">Los slices son una forma sencilla de hacer un recorte en el array</p>
+            <a href = "../../multimedia/basico/slice.png" target = "blank">
+                <img 
+                    src = "../../multimedia/basico/slice.png" 
+                    alt = "code for slices"
+                    class = "res__imgcode"
+                >
+            </a>
         </div>
         <div class = "subTeme" id = "mapa">
-            <h2>Maps</h2>
-            <p>Los maps son una forma de array pero con la diferencia que estos se pueden definir un nombre o un numero especifico para la posicion del valor si tiene conocimientos con python es lo mismo que un diccionario o si tiene conocimentos con php es muy parecido a un array asociativo</p>
-            <img src = "../../multimedia/basico/mapa.png" alt = "code for mapas">
+            <h2 class = "main__title">Maps</h2>
+            <p class = "res__paddingP">Los maps son una forma de array pero con la diferencia que estos se pueden definir un nombre o un numero especifico para la posicion del valor si tiene conocimientos con python es lo mismo que un diccionario o si tiene conocimentos con php es muy parecido a un array asociativo</p>
+            <a href = "../../multimedia/basico/mapa.png" target = "blank">
+                <img 
+                    src = "../../multimedia/basico/mapa.png" 
+                    alt = "code for mapas"
+                    class = "res__imgcode"
+                >
+            </a>
         </div>
         <div class = "subTeme" id = "struct">
-            <h2>Structs</h2>
-            <p>A struct es una colección de múltiples campos de datos con sus tipos de datos definidos agrupados. Son útiles para agrupar datos para formar registros personalizados.</p>
-            <img src = "../../multimedia/basico/struct.png" alt = "code for struct">
+            <h2 class = "main__title">Structs</h2>
+            <p class = "res__paddingP">A struct es una colección de múltiples campos de datos con sus tipos de datos definidos agrupados. Son útiles para agrupar datos para formar registros personalizados.</p>
+            <a href = "../../multimedia/basico/struct.png" target = "blank">
+                <img 
+                    src = "../../multimedia/basico/struct.png" 
+                    alt = "code for struct"
+                    class = "res__imgcode"
+                >
+            </a>
         </div>
-
     </div>
 
     <footer>

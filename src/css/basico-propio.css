@@ -22,3 +22,49 @@
 .code__img {
     width: 500px;
 }
+
+@media screen and (max-width: 450px) {
+    .main__title {
+        text-align: center;
+    }
+    .subTeme {
+        width: 360px !important;
+    }
+    .content {
+        width: 350px;
+    }
+
+    .content__first {
+        width: inherit;
+    }
+
+    .content__second {
+        width: inherit;
+    }
+
+    .res__ol {
+        width: 350px;
+    }
+
+    .res__imgol {
+        width: 300px;
+    }
+    .res__imgcode {
+        width: 350px !important;
+    }
+
+    .res__p {
+        width: 350px;
+        padding: 5px;
+    }
+
+    .res__paddingP {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: justify;
+    }
+}
+
+.imgcode {
+    width: 1200px;
+}

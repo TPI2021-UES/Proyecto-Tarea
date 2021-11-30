@@ -15,13 +15,16 @@ body {
     content: "";
     display: table; }
     body header .navbar {
+      font-family: "Times New Roman";
       background: #0c0f18; }
     body header .collapse .items {
+      font-family: "Times New Roman";
       background-color: #0c0f18;
       color: #f0f0f0; }
       body header .collapse .items li:hover {
         background-color: #485780; }
     body header .menu-inicial {
+      font-family: "Times New Roman";
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;

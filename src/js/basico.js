@@ -11,7 +11,7 @@ idButtonLinux.addEventListener('click', () => {
                 Haga click en <a href = "#">Download</a> para descargar la ultima version de Go
             </li>
             <li>
-                <video controls width="400">
+                <video controls width="300">
                     <source type = "video/mp4" src = "../../multimedia/basico/install.mp4" />
                 </video>
             </li>
@@ -28,7 +28,7 @@ idButtonWindows.addEventListener('click', () => {
                 Haga click en <a href = "#">Download</a> para descargar la ultima version de Go
             </li>
             <li>
-                <video controls width="400">
+                <video controls width="300">
                     <source type = "video/mp4" src = "../../multimedia/basico/installwindows.mp4" />
                 </video>
             </li>
