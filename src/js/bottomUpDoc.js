@@ -17,11 +17,7 @@ window.onscroll = () => {
 }
 
 const scrollUp = () => {
-    currentValueScroll = document.documentElement.scrollTop;
-    if(currentValueScroll > 0) {
-        window.requestAnimationFrame(scrollUp)
-        document.documentElement.scrollTo(0, currentValueScroll - (currentValueScroll/2));
-    }
+    document.documentElement.scrollTo(0, 0);
 }
 
 buttonToUp.addEventListener('click', () => scrollUp());
