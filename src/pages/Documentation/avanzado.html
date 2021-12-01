@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../css/intermedio.css">
     <link rel="stylesheet" href="../../css/basico-propio.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/basico-propio.css">
 </head>
 <body>
 
@@ -88,6 +89,198 @@
                 >
             </a>
         </div>
+    </div>
+
+
+    <main class="mainContent">
+        <h1>Nivel Avanzado.</h1>
+        <p>
+            En esta sección se encontrara con diferentes funcionalidades mas complejas en cierto modo, del lenguaje de programación GO.
+            Veremos una introducción al uso y manejo de funciones, programación orientada a objetos y el manejo de archivos, coneción a beses de datos. Entre ellos muchas mas variantes. Happy Hacking
+        </p>
+        <ul class="nav nav-tabs">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#selectivas" role="button" aria-expanded="false">
+              Menu
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#func">Funciones</a></li>
+              <li><a class="dropdown-item" href="#poo">POO</a></li>
+              <li><a class="dropdown-item" href="#if-anidada">else-if</a></li>
+              <li><a class="dropdown-item" href="#switchMultiple">switch</a></li>
+            </ul>
+          </li>
+        </ul>
+      </main>
+
+
+    <a name="func" id="func"></a>
+    <div class="content">
+      <h2 class = "main__title">Funciones</h2>
+      <p class="res__paddingP">
+        Las funciones son conjuntos de sentencias que procesan la entrada y la salida de retorno. En Golang, las funciones se definen utilizando la palabra clave <i>func</i>.
+      </p>
+      <div class="subTeme">
+        <h3 class = "main__title">Declaración y Sintaxis basica</h3>
+        <p class = "res__paddingP">
+            En el siguiente ejemplo, creamos una función que imprime "¡Hola mundo!" y luego llamó a la función de la función principal.
+            Se declara con la palabra clave <i>func</i> posterior el nombre de la funcion y los parentesis donde iran los parametros de la función.
+            Se limita con llaves el area donde se ejecutaran los diferentes procesos solo para esa función.
+        </p>
+        <a href = "../../multimedia/avanzado/funcion_basica.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/funcion_basica.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+      </div>
+      <div class="subTeme">
+        <h3 class = "main__title">Pasando parámetros y valor de retorno</h3>
+        <p class = "res__paddingP">
+            Podemos pasar los parámetros a las funciones como entrada y podemos devolver los valores después del procesamiento como salida de las funciones. 
+            En el siguiente ejemplo, creamos dos funciones, agregar y mul. Ambos toman dos enteros, son parámetros y devuelven un entero como salida. 
+            El valor de retorno se agrega al final del encabezado de la función. Para retornar estos valores se ocupa la palabra reserveda <i>return</i>
+        </p>
+        <a href = "../../multimedia/avanzado/paso_de_parametros.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/paso_de_parametros.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+        <p class="res__paddingP">
+            NOTA: Tenemos que especificar el tipo de dato que son los parametros y el que devolvera la función en caso de cevolver algún valor.
+        </p>
+      </div>
+      <div class="subTeme">
+        <h3 class = "main__title">Omitiendo indicadores de tipos de datos</h3>
+        <p class = "res__paddingP">
+            Si los tipos de datos son los mismos, puede omitirlos, excepto el último en la fila. Podríamos haber escrito add and mul como se muestra a continuación. En el siguiente ejemplo, omite el tipo de datos de i. Se deduce como int del último tipo de datos en la fila, es decir, del tipo de datos de j.
+        </p>
+        <a href = "../../multimedia/avanzado/omitir.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/omitir.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+      </div>
+      <div class="subTeme">
+        <h3 class = "main__title">Devolviendo multiples valores</h3>
+        <p class = "res__paddingP">
+            Las funciones pueden devolver múltiples valores como se muestra en el ejemplo. En el siguiente ejemplo, la función addAndMultiply está devolviendo dos enteros como se representa en la firma de la función. El primer valor de retorno es para la suma y el segundo valor de retorno es para la multiplicación
+        </p>
+        <a href = "../../multimedia/avanzado/omitir.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/return_multiple.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+      </div>
+    </div>
+
+    <a name="poo" id="poo"></a>
+    <div class="content">
+      <h2 class = "main__title">Programación Orientada a Objetos (POO)</h2>
+      <p class="res__paddingP">
+        En este post, vamos a ver como podemos aplicar POO en Go. La programación orientada a objetos es una herramienta o un paradigma muy versatil y util porque nos permite la reutilización de codigo entre muchas más funcionalidades.
+      </p>
+      <div class="subTeme">
+        <h3 class = "main__title">Clases</h3>
+        <p class = "res__paddingP">
+            Como se había mencionado en el apartado anterior, Golang no tiene clases pero si usa structs.
+        </p>
+        <a href = "../../multimedia/avanzado/struct.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/struct.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+        <p class="res__paddingP">
+            Ahora vamos a agregar variables a nuestras clases.
+        </p>
+        <a href = "../../multimedia/avanzado/atributos.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/atributos.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+        <p class = "res__paddingP">
+            Como vemos de momento no ha sido tan difícil crear un struct y agregarle variables, que tal si creamos un constructor.
+        </p>
+        <p class = "res__paddingP">
+            Aquí vamos a notar una pequeña diferencia, como un struct no es una clase, una de las mejores formas que encontré de hacer un constructor es por medio de una función. La función usa un puntero, que en resumen un puntero me permite acceder a la dirección en memoria de otra variable
+            *Animal: Un * previo a nuestro struct o algún tipo de dato me permite indicar donde vamos a almacenar la información que este caso vamos a devolver
+            &Animal: un & previo a nuestro struct nos indica que vamos a devolver la referencia ó dirección en memoria de esa nueva varible creada.
+        </p>
+        <a href = "../../multimedia/avanzado/constructor.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/constructor.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+        <p class = "res__paddingP">
+            En este punto podemos hacer pruebas de como va quedando nuestro objeto animal
+        </p>
+        <a href = "../../multimedia/avanzado/prueba.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/prueba.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+        <p class = "res__paddingP">
+            En este punto podemos agregar comportamientos para editar el nombre de nuestro objeto
+        </p>
+        <a href = "../../multimedia/avanzado/set_get.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/set_get.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+      </div>
+      <div class="subTeme">
+        <h3 class = "main__title">Herencia (Composición)</h3>
+        <p class = "res__paddingP">
+            En GO no existe la herencia como tal, pero vamos a ver como como podemos implementar algo que que nos permite lograr algo similar y es composición.
+        </p>
+        <a href = "../../multimedia/avanzado/herencia.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/herencia.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+        <p class = "res__paddingP">
+            Probamos el condigo.
+        </p>
+        <a href = "../../multimedia/avanzado/pruebaHerencia.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/pruebaHerencia.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+      </div>
+      <div class="subTeme">
+        <h3 class = "main__title">Polimorfismo</h3>
+        <p class = "res__paddingP">
+            El polimorfismo consiste en clases heredadas que tienen una misma función con comportamientos diferentes, para un ejemplo vamos a crear una función nueva llamada tellMeSomeThing la cual devolvera un string diferente tanto para la clase Animal como para la clase Dog. Para esto en golang crearemos una función con una interface que llame la función tellMeSomething independientemente de la clase que sea.    
+        </p>
+        <a href = "../../multimedia/avanzado/polimorfismo.png" target = "blank">
+            <img 
+                src="../../multimedia/avanzado/polimorfismo.png" 
+                alt="estructura del if"
+                class = "res__imgcode"
+            >
+        </a>
+      </div>
     </div>
 
     <footer>
