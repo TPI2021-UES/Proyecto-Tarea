@@ -8,7 +8,7 @@ idButtonLinux.addEventListener('click', () => {
     idContentSecond.innerHTML = `
         <ol>
             <li>
-                Haga click en <a href = "#">Download</a> para descargar la ultima version de Go
+                Haga click en <a href = "https://go.dev/dl/" target = "blank">Download</a> para descargar la ultima version de Go
             </li>
             <li>
                 <video controls width="300">
@@ -25,7 +25,7 @@ idButtonWindows.addEventListener('click', () => {
     idContentSecond.innerHTML = `
         <ol>
             <li>
-                Haga click en <a href = "#">Download</a> para descargar la ultima version de Go
+                Haga click en <a href = "https://go.dev/dl/" target = "blank">Download</a> para descargar la ultima version de Go
             </li>
             <li>
                 <video controls width="300">
